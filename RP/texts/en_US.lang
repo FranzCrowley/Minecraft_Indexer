@@ -1,0 +1,19 @@
+tile.fr_idx:indexer.name=Indexer
+tile.fr_idx:indexer_image.name=Indexer
+
+indexer.ui.title=Indexer
+indexer.ui.body=Cofres totales: %s \nSelect an option
+indexer.ui.button1=[+] Save item in hand
+indexer.ui.button2=[+] Save inventory
+indexer.ui.itemButton=%1$s available: %2$s
+
+indexer.ui.btn1savedSuccess=§aItem saved
+indexer.ui.btn1savedFull=Chests full. Couldn't save items
+indexer.ui.btn1savedError=You don't have any item in hand to save
+indexer.ui.btn2savedSuccess=§aInventory saved in chests
+indexer.ui.btn2savedError=There were no items to save or chests full
+
+modal.ui.title=Extract
+modal.ui.slider=Select amount to extract
+modal.ui.extractFull=Inventory full. Items dropped
+modal.ui.extractSuccess=§aSuccesfully extracted %1$s of %2$s

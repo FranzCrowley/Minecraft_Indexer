@@ -1,0 +1,19 @@
+tile.fr_idx:indexer.name=Indexer
+tile.fr_idx:indexer_image.name=Indexer
+
+indexer.ui.title=Indexer
+indexer.ui.body=Cofres totales: %s \nSelecciona una opción
+indexer.ui.button1=[+] Guardar objeto en mano
+indexer.ui.button2=[+] Guardar inventario
+indexer.ui.itemButton=%1$s disponible: %2$s
+
+indexer.ui.btn1savedSuccess=§aObjeto guardado
+indexer.ui.btn1savedFull=Cofres llenos. No se pudo guardar
+indexer.ui.btn1savedError=No tienes nada en la mano para guardar
+indexer.ui.btn2savedSuccess=§aInventario guardado en cofres
+indexer.ui.btn2savedError=No hay objetos para guardar o cofres llenos
+
+modal.ui.title=Extraer
+modal.ui.slider=Selecciona la cantidad a extraer
+modal.ui.extractFull=Inventario lleno. Objetos soltados
+modal.ui.extractSuccess=§aExtraído correctamente %1$s de %2$s

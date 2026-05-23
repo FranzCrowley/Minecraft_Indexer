@@ -1,0 +1,38 @@
+{
+	"format_version": "1.26.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "fr_idx:indexer_recipe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"C": {
+				"item": "minecraft:copper_ingot"
+			},
+			"M": {
+				"item": "minecraft:crafting_table"
+			},
+			"R": {
+				"item": "minecraft:redstone"
+			}
+		},
+		"pattern": [
+			"ICI",
+			"CRC",
+			"IMI"
+		],
+		"unlock": [
+			{
+				"item": "minecraft:iron_ingot"
+			}
+		],
+		"result": {
+			"item": "fr_idx:indexer"
+		}
+	}
+}

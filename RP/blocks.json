@@ -1,0 +1,11 @@
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"fr_idx:indexer": {
+		"sound": "iron",
+		"textures": "fr_idx_indexer"
+	}
+}
