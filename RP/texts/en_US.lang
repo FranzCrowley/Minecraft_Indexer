@@ -2,7 +2,7 @@ tile.fr_idx:indexer.name=Indexer
 tile.fr_idx:indexer_image.name=Indexer
 
 indexer.ui.title=Indexer
-indexer.ui.body=Cofres totales: %s \nSelect an option
+indexer.ui.body=Total chests: %s \nSelect an option
 indexer.ui.button1=[+] Save item in hand
 indexer.ui.button2=[+] Save inventory
 indexer.ui.itemButton=%1$s available: %2$s
