@@ -141,3 +141,13 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+.bridge/
+
+builds/
+
+.DS_Store
+Thumbs.db
+
+
+node_modules/
