@@ -6,7 +6,10 @@ Place your chests next to each other, or one above another, then place the Index
 
 Be mindful of whatever block you place next to your chests, because the indexer will get the inventory of any block that has one. If you don't want a specific chest, barrel, furnace, shulker, etc. in your indexer, simply leave one space empty/with any other block.
 
+<img width="645" height="285" alt="IndexerRecipe" src="https://github.com/user-attachments/assets/ae056e08-60be-4b16-8052-d0272cd6428b" />
+
 (*_Doesn't need experiments to be activated_*)
+
 
 ## Downloads
 [**Latest Version (.mcaddon)**](https://github.com/FranzCrowley/Minecraft_Indexer/releases/latest)
