@@ -44,7 +44,48 @@ function getConnectedChests(dimension, startLocation) {
             continue;
         }
     }
-    return connectedChests;
+
+    const finalChests = [];
+    const skipLocations = new Set();
+
+    for (const block of connectedChests) {
+        const loc = block.location;
+        const locKey = `${loc.x}, ${loc.y}, ${loc.z}`;
+
+        if (skipLocations.has(locKey)) continue;
+
+        finalChests.push(block);
+
+        if (block.typeId.includes("chest")) {
+            const inv = block.getComponent("inventory");
+            if (inv && inv.container && inv.container.size === 54) {
+
+
+                const horizontalDirs = [{ x: 1, z: 0 }, { x: -1, z: 0 }, { x: 0, z: 1 }, { x: 0, z: -1 }];
+
+                for (const d of horizontalDirs) {
+                    const nLoc = { x: loc.x + d.x, y: loc.y, z: loc.z + d.z };
+                    try {
+                        const neighbor = dimension.getBlock(nLoc);
+
+
+                        if (neighbor && neighbor.typeId === block.typeId) {
+                            const nInv = neighbor.getComponent("inventory");
+                            if (nInv && nInv.container && nInv.container.size === 54) {
+
+                                skipLocations.add(`${nLoc.x}, ${nLoc.y}, ${nLoc.z}`);
+                                break;
+                            }
+                        }
+                    } catch (e) {
+
+                    }
+                }
+            }
+        }
+    }
+
+    return finalChests;
 }
 
 function getNetworkSummary(connectedChests) {
